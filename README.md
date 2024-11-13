@@ -7,9 +7,10 @@ Simple & basic airsoft script made for QBCore
 - 🧍 Peds for Entry/Exit & Debug
 - 🎯 qb-target/ox_target & qb-menu/ox_lib support
 - 🔔 qb-core/ox_lib notification system
+- 🎒 qb-inventory/ox_inventory support
 - 🚩 Polyzone/circlezone
-- ♻️ Configurable
-- 🔫 Priced Loadouts (config, random or your own)
+- ♻️ Highly Configurable
+- 🔫 Priced Loadouts (config or random config)
 - 🪄 Random spawnlocations
 - 💬 Locales
 
@@ -76,12 +77,9 @@ If using [ps-dispatch](https://github.com/Project-Sloth/ps-dispatch), remember t
 ``` lua
 [3] = {label = "Airsoft Arena", coords = vector3(2025.99, 2784.98, 76.39), length = 14.0, width = 5.0, heading = 270, minZ = 28.62, maxZ = 32.62},
 ```
+
 This way, police won't be notified of any shots in the arena
 
-## Future Plans
-- Adding a "who killed who" system
-- Adding a leaderboard
-- More gamemodes
-
 ## Dependencies
+- [ox_lib](https://github.com/overextended/ox_lib) (for versioncheck)
 - [PolyZone](https://github.com/mkafrin/PolyZone)
