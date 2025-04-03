@@ -1,16 +1,13 @@
 Config = {}
 
-Config.Debug = false -- Toggle debug mode for the zone, prints & debug peds
+Config.Framework = 'qb' -- Options: 'qb' or 'ox'
+Config.Debug = false
+Config.TargetSystem = 'qb-target' -- Options: 'qb-target' or 'ox_target'
+Config.MenuSystem = 'qb-menu' -- Options: 'qb-menu' or 'ox_lib'
+Config.NotifySystem = 'qb-core' -- Options: 'qb-core' or 'ox_lib'
+Config.InventorySystem = 'qb-inventory' -- Options: 'qb-inventory' or 'ox_inventory'
 
-Config.TargetSystem = "qb-target" -- Options: 'qb-target' or 'ox_target'
-
-Config.MenuSystem = "qb-menu" -- Options: 'qb-menu' or 'ox_lib'
-
-Config.NotifySystem = "qb-core" -- Options: 'qb-core' or 'ox_lib'
-
-Config.InventorySystem = "qb-inventory" -- Options: 'qb-inventory' or 'ox_inventory'
-
-Config.ZoneType = "circle" -- Options: 'circle' or 'poly'
+Config.ZoneType = 'circle' -- Options: 'circle' or 'poly'
 
 -- Define the airsoft zone configuration
 Config.AirsoftZone = {
@@ -26,12 +23,12 @@ Config.AirsoftZone = {
 
 Config.EnterLocation = {
 	coords = vector4(2024.5, 2844.17, 50.28, 0), -- Position of the enter ped
-	model = "s_m_y_marine_01", -- Ped model
+	model = 's_m_y_marine_01', -- Ped model
 }
 
 Config.ExitLocation = {
 	coords = vector4(2024.67, 2841.7, 50.31, 180), -- Position of the exit ped
-	model = "a_m_y_hipster_01", -- Ped model
+	model = 'a_m_y_hipster_01', -- Ped model
 }
 
 -- Configurable spawn locations within the airsoft zone
@@ -54,38 +51,48 @@ Config.AirsoftBlip = {
 	sprite = 432, -- Blip sprite/icon
 	color = 1, -- Blip color
 	scale = 0.8, -- Blip scale
-	name = "Airsoft Arena", -- Blip name
+	name = 'Airsoft Arena', -- Blip name
 }
 
 -- Define loadouts with weapons, ammo, and their labels
 Config.Loadouts = {
 	{
-		name = "Loadout 1",
+		name = 'Loadout 1',
 		weapons = {
-			{ name = "weapon_airsoftglock20", label = "Pistol" },
+			{ name = 'weapon_airsoftglock20', label = 'Pistol' },
 		},
 		ammo = {
-			{ name = "pistol_ammo", amount = 10 },
+			{ name = 'pistol_ammo', amount = 10 },
 		},
 		price = 100,
 	},
 	{
-		name = "Loadout 2",
+		name = 'Loadout 2',
 		weapons = {
-			{ name = "weapon_airsoftm4", label = "Assault Rifle" },
+			{ name = 'weapon_airsoftm4', label = 'Assault Rifle' },
 		},
 		ammo = {
-			{ name = "rifle_ammo", amount = 10 },
+			{ name = 'rifle_ammo', amount = 10 },
 		},
 		price = 100,
 	},
 	{
-		name = "Loadout 3",
+		name = 'Loadout 3',
 		weapons = {
-			{ name = "weapon_airsoftr870", label = "Shotgun" },
+			{ name = 'weapon_airsoftr870', label = 'Shotgun' },
 		},
 		ammo = {
-			{ name = "shotgun_ammo", amount = 10 },
+			{ name = 'shotgun_ammo', amount = 10 },
+		},
+		price = 100,
+	},
+	{
+		name = 'Loadout 4 (OX)',
+		weapons = {
+			{ name = 'weapon_airsoftglock20', label = 'Pistol' },
+		},
+		ammo = {
+			{ name = 'ammo-9', amount = 100 },
 		},
 		price = 100,
 	},
